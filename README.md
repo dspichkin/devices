@@ -16,7 +16,9 @@ npm install
 
 bower install
 
+gulp build
 
-##Запуск
+##Запуск для отладки
 
 gulp serve
+

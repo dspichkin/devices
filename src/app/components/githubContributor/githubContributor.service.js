@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app')
+    .module('devices')
     .factory('githubContributor', githubContributor);
 
   /** @ngInject */

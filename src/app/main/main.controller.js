@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app')
+    .module('devices')
     .controller('MainController', MainController);
 
   function MainController($timeout, webDevTec, toastr) {

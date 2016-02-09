@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   angular
-    .module('app')
+    .module('devices')
     .controller('UsersController', UsersController);
 
   function UsersController($http, users, $deviceservice, $userdeviceservice) {

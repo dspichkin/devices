@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app')
+    .module('devices')
     .controller('DevicesController', DevicesController);
 
   function DevicesController(devices) {

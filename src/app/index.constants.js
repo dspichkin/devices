@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('app')
+    .module('devices')
     .constant('malarkey', malarkey)
     .constant('moment', moment)
     .constant('config', {

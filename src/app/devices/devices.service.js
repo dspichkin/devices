@@ -4,7 +4,7 @@
 globals
 */
   angular
-    .module('app')
+    .module('devices')
     .factory('$deviceservice', devices);
     
     function devices($http, $q) {

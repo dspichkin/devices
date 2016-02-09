@@ -4,7 +4,7 @@
 globals
 */
   angular
-    .module('app')
+    .module('devices')
     .factory('$userdeviceservice', userdeviceservice);
     
     //, $deviceservice, $userservice
