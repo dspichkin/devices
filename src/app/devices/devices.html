@@ -1,0 +1,23 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="row">
+    <table class="table">
+    	<thead>
+    		<th>Id</th>
+    		<th>Имя устройства</th>
+    	</thead>
+    	<tbody>
+    		<tr ng-repeat="device in vm.devices track by $index">
+    			<td><input type="checkbox"> {{device.id}}</td>
+    			<td>
+    				<input type="text" ng-model="device.name" class="input" style="width:300px;"/>
+    			</td>
+    		</tr>
+    	</tbody>
+    </table>
+  </div>
+</div>

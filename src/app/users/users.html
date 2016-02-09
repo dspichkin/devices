@@ -1,0 +1,43 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="row">
+    <table class="table">
+    	<thead>
+    		<th>Имя</th>
+    		<th>Фамилия</th>
+    		<th>Описание</th>
+    		<th>Устройства</th>
+    	</thead>
+    	<tbody>
+    		<tr ng-repeat="user in vm.users track by $index">
+    			<td>
+    				<input type="checkbox" ng-checked="user.selected" ng-click="vm.toggleSelection(user)">
+    				{{user.first_name}}
+    			</td>
+    			<td>{{user.last_name}}</td>
+    			<td>{{user.description}}</td>
+    			<td>
+    				<ui-select ng-model="vm.selectedDevice" theme="bootstrap" on-select="vm.addDevice($item, user.id)" style="width:250px;">
+					    <ui-select-match placeholder="Набирите имя устройства ..."><span style="color:#c3c3c3;">Набирите имя устройства ...</span></ui-select-match>
+					    <ui-select-choices repeat="device in vm.devices | filter: $select.search track by device.name"
+						         refresh="vm.refreshDevices($select.search, user)"
+						         refresh-delay="0">
+						         <div ng-bind-html="device.name | highlight: $select.search"></div>
+						</ui-select-choices>
+					</ui-select>
+
+    				<p ng-repeat="device in user.full_devices track by $index" style="margin-top:20px;">
+    					{{device.name}} <span class="glyphicon glyphicon-remove" aria-hidden="true" style="cursor: pointer;"ng-click="vm.deleteDevice(user.id, device.id)"></span>
+
+    				</p>
+    			</td>
+    		</tr>
+    	</tbody>
+    </table>
+  </div>
+
+</div>

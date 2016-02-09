@@ -1,0 +1,52 @@
+[
+	{
+		"first_name": "Имя",
+		"last_name": "Фамилия",
+		"description": "Описание",
+		"devices": [{
+			"name": "устройство 1"
+			}, {
+			"name": "устройство 3"
+			}, {
+			"name": "устройство 4"
+			}]
+	},
+	{
+		"first_name": "Имя1",
+		"last_name": "Фамилия1",
+		"description": "Описание1",
+		"devices": [{
+			"name": "устройство 1"
+			}, {
+			"name": "устройство 2"
+			}, {
+			"name": "устройство 3"
+			}, {
+			"name": "устройство 4"
+			}]
+	},
+	{
+		"first_name": "Имя2",
+		"last_name": "Фамилия2",
+		"description": "Описание2",
+		"devices": [{
+			"name": "устройство 1"
+			}, {
+			"name": "устройство 2"
+			}]
+	},
+	{
+		"first_name": "Имя3",
+		"last_name": "Фамилия3",
+		"description": "Описание3",
+		"devices": [{
+			"name": "устройство 4"
+			}]
+	},
+	{
+		"first_name": "Имя4",
+		"last_name": "Фамилия4",
+		"description": "Описание4",
+		"devices": []
+	}
+]
