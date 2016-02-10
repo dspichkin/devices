@@ -22,7 +22,7 @@
     			<td>{{user.description}}</td>
     			<td>
     				<ui-select ng-model="vm.selectedDevice" theme="bootstrap" on-select="vm.addDevice($item, user.id)" style="width:250px;">
-					    <ui-select-match placeholder="Набирите имя устройства ..."><span style="color:#c3c3c3;">Набирите имя устройства ...</span></ui-select-match>
+					    <ui-select-match placeholder="Наберите имя устройства ..."><span style="color:#c3c3c3;">Наберите имя устройства ...</span></ui-select-match>
 					    <ui-select-choices repeat="device in vm.devices | filter: $select.search track by device.name"
 						         refresh="vm.refreshDevices($select.search, user)"
 						         refresh-delay="0">
